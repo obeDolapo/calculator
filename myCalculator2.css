@@ -1,0 +1,79 @@
+
+body {
+	border: 1px solid  #ffc266;
+	width: 300px;
+	text-align: center;
+ }
+ 
+ .container {
+   text-align: center;
+   background-color: #99ccff;
+   margin: auto;
+ }
+  .button {
+   position: center;
+   height: 78px;
+   width: 68px;
+   margin: 5px 0 0;
+   font-size: 33px;   
+   font-weight: light;
+   font-family: Helvetica;
+   colour: #ffc266;  
+  }
+  
+  .button:active
+  {
+  background-color: #938a82;
+  transform: translateY(4px);
+  opacity: 0.1;
+  border:none;
+  }
+  
+  
+   #display {
+     width: 290px;
+	 height: 50px;
+   }
+   
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
