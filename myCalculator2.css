@@ -1,40 +1,49 @@
 
-body {
-	border: 1px solid  #ffc266;
-	width: 300px;
-	text-align: center;
- }
- 
  .container {
    text-align: center;
    background-color: #99ccff;
-   margin: auto;
+   margin: 3px;
  }
   .button {
    position: center;
-   height: 78px;
+   height: 80px;
    width: 68px;
    margin: 5px 0 0;
-   font-size: 33px;   
+   font-size: 16px;   
    font-weight: light;
    font-family: Helvetica;
-   colour: #ffc266;  
+   colour: #990099;  
   }
   
   .button:active
   {
-  background-color: #938a82;
-  transform: translateY(4px);
+  background-color: #53ff1a;
+  transform: translatex(8px);*/
   opacity: 0.1;
   border:none;
   }
-  
+  .button:hover {
+   color: #53ff1a;
+   background-color: #990099;
+  }
   
    #display {
      width: 290px;
-	 height: 50px;
+	 height: 60px; 
    }
    
+   body {
+	border: 2px solid  blue;
+	width: 300px;
+	border-radius: 10px;
+	
+ }
+  .display input {
+  font-size: 30px;
+  text-align: center;
+  background-color: lightGray;
+  }
+ 
   
  
  
