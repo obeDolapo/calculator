@@ -6,11 +6,11 @@
  }
   .button {
    position: center;
-   height: 80px;
+   height: 70px;
    width: 68px;
    margin: 5px 0 0;
-   font-size: 16px;   
-   font-weight: light;
+   font-size: 20px;   
+   font-weight: heavy;
    font-family: Helvetica;
    colour: #990099;  
   }
@@ -18,31 +18,35 @@
   .button:active
   {
   background-color: #53ff1a;
-  transform: translatex(8px);*/
-  opacity: 0.1;
+  transform: translatex(8px);
+  opacity: 0.5;
   border:none;
   }
   .button:hover {
-   color: #53ff1a;
-   background-color: #990099;
+   color: #0000ff;
+   background-color: #FF334C;
   }
   
    #display {
      width: 290px;
-	 height: 60px; 
+	 height: 58px;*/
    }
    
    body {
 	border: 2px solid  blue;
 	width: 300px;
-	border-radius: 10px;
+	border-radius: 10px;*/
+  background-color: #9BA4BA;
 	
  }
-  .display input {
+  #display input {
   font-size: 30px;
   text-align: center;
   background-color: lightGray;
   }
+
+
+
  
   
  

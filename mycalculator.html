@@ -1,53 +1,57 @@
 <!doctype html>
-<html>
+<html ng-app= "calculatorApp">
 <head>
 <meta charset="utf-8">
-<title>Simple Calculator</title>
+<title>The Calculator</title>
+<!--<script src="nscript.js"></script>--> 
 <link rel="stylesheet" type="text/css"  href="myCalculator2.css">
-<script src="nscript.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="angular1.6.4"></script>
+
+
+
 </head>
 
-<body>
+<body id= "background" ng-controller="calculatorBtn">
+<h3><italics> {{ proprietary }} <italics></h3>
+
 <div class= "container">
-<div class= "display"><input type= "text" value="" id="display" readonly></div>
+<div id= "display"><input type= "text" value="{{display}}" id="display" readonly></div>
+
 <div class="keys">
-
 <p>
-<input type= "button" value="9" class= "button" onclick= "math('9')">
-<input type= "button" value="8" class= "button" onclick="math('8')">
-<input type= "button" value="7" class= "button" onclick='math("7")'>
-<input type= "button" value="6" class= "button" onclick='math("6")'>
+<button type="button" class= "button" value="9" ng-click='onScreen("9")'>9</button>
+<button type="button" class= "button" value="8" ng-click='onScreen("8")'>8</button>
+<button type="button" class= "button" value="7" ng-click='onScreen("7")'>7</button>
+<button type="button" class= "button" value="6" ng-click='onScreen("6")'>6</button>
 </p>
 <p>
-<input type= "button" value="5" class= "button" onclick='math("5")'>
-<input type= "button" value="4" class= "button" onclick='math("4")'>
-<input type= "button" value="3" class= "button" onclick='math("3")'>
-<input type= "button" value="2" class= "button" onclick='math("2")'>
+<button type="button" class= "button" value="5" ng-click='onScreen("5")'>5</button >
+<button type="button" class= "button" value="4" ng-click='onScreen("4")'>4</button >
+<button type="button" class= "button" value="3" ng-click='onScreen("3")'>3</button >
+<button type="button" class= "button" value="2" ng-click='onScreen("2")'>2</button >
 </p>
 <p>
-<input type= "button" value="1" class= "button" onclick='math("1")'>
-<input type= "button" value="0" class= "button" onclick='math("0")'>
-<input type= "button" value="+" class= "button" onclick='math("+")'>
-<input type= "button" value="-" class= "button" onclick='math("-")'>
+<button type="button" class= "button" value="1" ng-click='onScreen("1")'>1</button >
+<button type="button" class= "button" value="0" ng-click='onScreen("0")'>0</button >
+<button type="button" class= "button" value="+" ng-click='onScreen("+")'>+</button >
+<button type="button" class= "button" value="-" ng-click='onScreen("-")'>-</button >
+</p>
+<button type="button" class= "button" value="/" ng-click='onScreen("/")'>/</button >
+<button type="button" class= "button" value="x" ng-click='onScreen("x")'>*</button >
+<button type="button" class= "button" value="=" ng-click='equal()'>=</button >
+<button type="button" class= "button" value="x^2" ng-click='powerOfTwo()'>x<sup>2</button>
 </p>
 <p>
-<input type= "button" value="/" class= "button" onclick='math("/")'>
-<input type= "button" value="X" class= "button" onclick='math("*")'>
-<input type="button"  value="mrc" class="button" onclick='c("not defined")'>
-<input type= "button" value="=" class= "button" onclick='e()'>
-</p>
-<p>
-<input type= "button" value="C" class= "button" onclick='c("")'>
-<input type="button" value="." class="button" onclick='math(".")'>
-<input type="button" value="&radic" class="button" onclick='math("%")'>
-<input type="button" value="Del" class="button" onclick='bs()'>
-
+<button type="button" class= "button" value="+/-" ng-click='plusminus()'>+/-</button >
+<button type="button" class= "button" value="Del" ng-click='clearOne()'>Del</button >
+<button type="button" class= "button" value="1/x" ng-click='inverseOf()'>1/x</button >
+<button type="button" class= "button" value="C" ng-click='clearIt()'>C</button>
 </p>
 
 </div>
 </div>
 </div>
-
-
 </body>
 </html>
+
