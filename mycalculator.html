@@ -1,24 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html ng-app= "calculatorApp">
 <head>
-<meta charset="utf-8">
 <title>The Calculator</title>
-<script src="bower_components/angular/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 <script src="nScript.js"></script> 
 <link rel="stylesheet" type="text/css"  href="myCalculator2.css">
 <!--<script src="angular1.6.4"></script>-->
 
-
-
 </head>
 
 <body id= "background" ng-controller="calculatorBtn">
+
 <h3><italics> {{ proprietary }} <italics></h3>
 
 <div class= "container">
-<div id= "display"><input type= "text" value="{{display}}" id="display" readonly></div>
+<div id= "display"><input type= "text" name="display" value= "{{display}}" id="display" readonly></div>
 
-<div class="keys">
+<div id="keys">
 <p>
 <button type="button" class= "button" value="9" ng-click='onScreen("9")'>9</button>
 <button type="button" class= "button" value="8" ng-click='onScreen("8")'>8</button>
@@ -38,12 +36,12 @@
 <button type="button" class= "button" value="-" ng-click='onScreen("-")'>-</button >
 </p>
 <button type="button" class= "button" value="/" ng-click='onScreen("/")'>/</button >
-<button type="button" class= "button" value="x" ng-click='onScreen("x")'>*</button >
-<button type="button" class= "button" value="=" ng-click='equal()'>=</button >
+<button type="button" class= "button" value="x" ng-click='onScreen("x")'>X</button >
+<button type="button" class= "button equal" value="=" ng-click='equal()'>=</button >
 <button type="button" class= "button" value="x^2" ng-click='powerOfTwo()'>x<sup>2</button>
 </p>
 <p>
-<button type="button" class= "button" value="+/-" ng-click='plusminus()'>+/-</button >
+<button type="button" class= "button" value="+/-" ng-click='plusminus()'><em>-</em></button >
 <button type="button" class= "button" value="Del" ng-click='clearOne()'>Del</button >
 <button type="button" class= "button" value="1/x" ng-click='inverseOf()'>1/x</button >
 <button type="button" class= "button" value="C" ng-click='clearIt()'>C</button>

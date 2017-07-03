@@ -13,11 +13,14 @@
    font-weight: heavy;
    font-family: Helvetica;
    colour: #990099;  
+   border-radius: 100px;
+   background-color: #3366ff;
+
   }
   
   .button:active
   {
-  background-color: #53ff1a;
+  background-color: #804000;
   transform: translatex(8px);
   opacity: 0.5;
   border:none;
@@ -35,8 +38,9 @@
    body {
 	border: 2px solid  blue;
 	width: 300px;
+  height: 580px;
 	border-radius: 10px;*/
-  background-color: #9BA4BA;
+  background-color: ##804000;
 	
  }
   #display input {
@@ -44,8 +48,15 @@
   text-align: center;
   background-color: lightGray;
   }
+  
+  .equal:active {
+    background-color: #cc33ff;
+    font-weight: 
+  }
 
-
+  #keys {
+  	background-color: #333300;
+  }
 
  
   
